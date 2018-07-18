@@ -1,0 +1,16 @@
+Cache issues
+	Invalidation - how do you tell a cache request that its no longer valid ? 
+		Same user requests the same information multiple times, or multiple users
+		request the same information. 
+		There must be a proper way to get informed that the information held by 
+		a cache needs to be discarded.
+	Eviction - Asking a question after invalidation
+		how long do i exist after cache invalidation? 
+	Naming - what couples Invalidation & Eviction 
+		immutable cache key = {cache-name}-{uid}-{cache-version}-{logical-timestamp}
+	
+								 local cache
+	coherence - load balancer -> local cache -> memcache
+								 local cache
+						
+		  
